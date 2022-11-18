@@ -12,7 +12,7 @@ SECRET_KEY = "CHANGE_ME"
 if 'SECRET_KEY' in os.environ:
     SECRET_KEY = os.environ["SECRET_KEY"]
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://cities-weather.up.railway.app', 'localhost', '127.0.0.1'] # ['*']
 DEBUG = True
 
 INSTALLED_APPS = [

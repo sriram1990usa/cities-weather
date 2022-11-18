@@ -3,7 +3,9 @@ import os
 from django.shortcuts import render, redirect
 from .models import City
 from .forms import CityForm
+from django.views.decorators.csrf import csrf_exempt
 
+@csrf_exempt
 def index(request):
     url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=271d1234d3f497eed5b1d80a07b3fcd1'
 
