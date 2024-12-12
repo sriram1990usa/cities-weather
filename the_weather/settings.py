@@ -12,7 +12,7 @@ SECRET_KEY = "CHANGE_ME"
 if 'SECRET_KEY' in os.environ:
     SECRET_KEY = os.environ["SECRET_KEY"]
   
-ALLOWED_HOSTS = ['big-juliet-sriram-online-61ef4a97.koyeb.app', 'localhost', '127.0.0.1'] # ['*']
+ALLOWED_HOSTS = ['*']
 DEBUG = True
 
 INSTALLED_APPS = [
